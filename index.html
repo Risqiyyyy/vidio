@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Auto Looping Video from Google Drive</title>
+    <title>Vidio</title>
     <style>
         body {
             margin: 0;
@@ -18,8 +18,8 @@
         .video-container {
             position: relative;
             width: 100%;
-            max-width: 970px; /* Sesuaikan dengan lebar maksimum video asli */
-            padding-top: 25.77%; /* Rasio aspek dari 970x250 (250/970 * 100) */
+            max-width: 970px;
+            padding-top: 25.77%;
             overflow: hidden;
         }
 
@@ -29,11 +29,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: fill;
             object-position: center;
         }
-
-        /* Menyembunyikan kontrol video */
+        
         video::-webkit-media-controls {
             display: none;
         }
