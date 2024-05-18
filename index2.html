@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidio</title>
+    <style>
+        video::-webkit-media-controls {
+            display: none;
+        }
+        video::-webkit-media-controls-enclosure {
+            display: none;
+        }
+        video::-webkit-media-controls-panel {
+            display: none;
+        }
+        video::-webkit-media-controls-play-button {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="300x600.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+</html>
